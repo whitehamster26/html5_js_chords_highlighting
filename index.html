@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en" class="h-100">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chords Highlighting</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <meta name="theme-color" content="#7952b3">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body class="d-flex flex-column h-100">
+
+    <main class="flex-shrink-0">
+        <div class="container mb-4">
+            <h1 class="text-center mb-5">Chords Highlighting</h1>
+            <div class="row">
+                <div class="col-5 chordsInput">
+                    <h3 class="text-center mb-4">Raw text</h3>
+                    <div class="input-group mb-2">
+                        <textarea id="input" rows=18 class="form-control" aria-label="With textarea" style="resize: none"></textarea>
+                    </div>
+                    <button id="btnClear" type="button" class="btn btn-info">Clear</button>
+                </div>
+                <div class="col-5 chordsResult">
+                    <h3 class="text-center mb-4">Highlighted chords</h3>
+                    <div id="result" class="text-center"></div>
+                </div>
+                <div class="col-2">
+                    <h3 class="text-center mb-4">Chords</h3>
+                    <div id="chordsControl" class="mb-4 d-flex justify-content-center">
+
+                    </div>
+                    <span id=foundChords class=""></span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container">
+            <a href="https://github.com/whitehamster26/html5_js_chords_highlighting">
+                <img src="img/GitHub_Logo.png" alt="Source code" width="130px" height="50px">
+            </a>
+        </div>
+    </footer>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+    crossorigin="anonymous"></script>
+<script src="js/chords/chordsParser.js" type="module"></script>   
+<script src="js/app.js" type="module"></script>
+</html>

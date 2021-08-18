@@ -1,0 +1,30 @@
+.container {
+    width: auto;
+    
+    padding: 0 15px;
+  }
+  
+.chordsResult {
+    overflow: auto;
+}
+
+.chord {
+  color: red;
+}
+
+#altCounter {
+  width: 35px;
+  text-align: center;
+}
+
+#altPlus {
+  width: 35px;
+}
+
+#altMinus {
+  width: 35px;
+}
+
+.btnDisabled {
+  pointer-events: none;
+}
